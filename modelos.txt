@@ -1,0 +1,25 @@
+
+
+- primeiro passo
+    code: "npm init", coloque as informações.
+    com esse code criamos um package jason é importante para mexer nos pacotes
+
+- segundo passo 
+    code: "npm install -g sass", vai instalar os pacotes 
+
+  caso excluir os pacotes, digita no terminal o seguinte code "npm i"
+
+- terceiro passo 
+    dentro do arquivo package.jason, vai até "scripts"
+    e digite o seguinte code:
+    "compile:sass" : "sass main.scss style.css",
+    "watch:sass": "sass main.scss style.css -w"
+
+code do terminal: "npm run compile:sass"
+"npm run watch:sass"
+
+
+  arquivo em SASS: main.scss
+  aquivo em HTML: index.html
+  aquivo em CSS: style.css
+  

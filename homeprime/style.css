@@ -1,0 +1,114 @@
+/* Sistema de Tamanhos - https://typescale.com/ 
+
+Fontes - Minor Third - 1.200 - Em PX
+4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
+
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Padauk:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #fff;
+
+    background: url(backk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+}
+
+/*  CABEÇALHO  */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.12rem;
+    z-index: 99;
+    padding: 0.55rem 3.12rem;
+
+    & img {
+        width: 10rem;
+    }
+}
+
+nav ul {
+    display: flex;
+    align-items: start;
+    text-align: right;
+    gap: 2.5rem;
+}
+
+li {
+    list-style: none;
+    a {
+        color: #112e61;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color ease-in 0.2s;
+        
+        &:hover,
+        &:active {
+            color: #3050ce;
+        } 
+    }
+}
+
+/* secao */
+
+.secao {
+    padding: 7.63rem 2rem;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.secao-hero {
+    /* background-color: #fff; */
+    /* background-image: url(assets/pexels-photo-287237.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    filter: drop-shadow(); */
+}
+
+.logo-whatsapp {
+    position: absolute;
+    right: 2.05rem;
+    bottom: -1rem;
+    width: 9rem;
+    transition: ease-in 0.2s;
+}
+
+.logo-whatsapp svg {
+    width: 100%;
+}
+
+.logo-whatsapp:hover {
+    transform: translate(0.5rem, 0.5rem);
+}

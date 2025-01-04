@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&A Tonolli - Assistencia Tecnica Kavo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="text"> 
+            <div class="container">
+                <img src="logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="overlay">
+                <h2>Expandindo Seu Conhecimento</h2>
+                <p>Cursos online de alta qualidade em diversas áreas de estudo</p>
+                <button onclick="scrollToSection('cursos')">Ver Cursos</button>
+            </div>
+        </section>
+        <section id="cursos">
+            <div class="container">
+                <h2>Nossos Cursos</h2>
+                <div class="course">
+                    <img src="https://via.placeholder.com/300x200" alt="Curso de Programação">
+                    <div class="course-info">
+                        <h3>Curso de Programação</h3>
+                        <p>Domine as linguagens de programação mais demandadas no mercado.</p>
+                        <button>Mais Informações</button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="https://via.placeholder.com/300x200" alt="Curso de Marketing Digital">
+                    <div class="course-info">
+                        <h3>Curso de Marketing Digital</h3>
+                        <p>Desenvolva estratégias eficazes para promover negócios online.</p>
+                        <button>Mais Informações</button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="https://via.placeholder.com/300x200" alt="Curso de Design Gráfico">
+                    <div class="course-info">
+                        <h3>Curso de Design Gráfico</h3>
+                        <p>Aprenda a criar designs visuais incríveis com ferramentas populares.</p>
+                        <button>Mais Informações</button>
+                        <p id="sobre"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="con">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma instituição dedicada a fornecer educação de qualidade acessível a todos. Nossos cursos são projetados por especialistas da indústria e atualizados regularmente para refletir as últimas tendências e práticas.</p>
+            </div>
+        </section>
+        <section id="help">
+            <div class="container">
+                <h2>Ajuda</h2>
+                <div class="help-content">
+                    <p>Se precisar de assistência, estamos aqui para ajudar! Selecione uma das opções abaixo ou entre em contato conosco diretamente.</p>
+                    <a href="contato" class="help-link">Contato de Suporte</a>
+                    <a href="faq" class="help-link">FAQ</a>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Educação Moderna. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>
