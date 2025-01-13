@@ -134,12 +134,34 @@ nav ul li a:hover {
     padding: 50px;
     border-radius: 10px;
     animation: appear 3s;
+
+    & .overlay-location {
+        display: flex;
+        justify-content: center;
+        gap: 1.55rem;
+        p {
+            padding-top: 2.55rem;
+        }
+    }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 490px) {
     .overlay {
         padding: 20px;
-    }    
+    }   
+}
+@media all and (max-width: 741px) {
+    .overlay {
+        padding: 20px;
+    }  
+
+}
+@media all and (max-width: 680px) {
+    .overlay-location {
+        gap: none;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #intro h2 {
@@ -153,21 +175,19 @@ nav ul li a:hover {
 }
 
 #intro button {
-    padding: 15px 30px;
+    padding: 15px 50px;
     font-size: 1em;
-    color: #333;
-    background-color: #ffc107;
+    color: #fff;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
     unicode-bidi: isolate;
+    transition: background-color ease-in 0.3s;
 }
 
 #intro button:hover {
-    background-color: #e0a800;
-    transform: scale(1);
-    transition: all 0.6s;
+    background-color: rgb(22, 22, 174);
 }
 
 section {
@@ -338,17 +358,83 @@ form button {
     transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: #555;
-}
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+.rodape {
+    font-size: 1.33rem;
+    padding-top: 2.5rem;
+  }
+  
+  .rodape__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.6rem;
+    max-width: 136.6rem;
+    margin: 0 auto;
+  }
+  @media (max-width: 59.375em) {
+    .rodape__container {
+      flex-direction: column;
+      gap: 3.12rem;
+      align-items: center;
+    }
+  }
+  .rodape__secao-formulario {
+    background-color: #f9f9f9;
+    padding: 3.12rem 2rem;
+    
+  }
+  .rodape__app-newsletter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-footer p {
-    margin: 0;
-}
+  .rodape__texto-newsletter {
+    font-size: 3.32rem;
+    font-family: serif;
+    font-weight: 700;
+    text-wrap: nowrap;
+    line-height: 1;
+  }
+
+  .rodape__atendimento {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: 1.6rem;
+    width: 100%;
+    max-width: 46.4rem;
+  }
+  @media (max-width: 80em) {
+    .rodape__atendimento {
+      max-width: 35rem;
+    }
+  }
+  @media (max-width: 59.375em) {
+    .rodape__atendimento {
+      max-width: 60rem;
+      text-align: center;
+    }
+  }
+
+  .rodape__redes {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .rodape__rede {
+    opacity: 0.6;
+    filter: grayscale(1);
+  }
+  .rodape__rede:hover {
+    opacity: 1;
+    filter: none;
+  }
