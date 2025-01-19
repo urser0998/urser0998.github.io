@@ -68,8 +68,10 @@ header {
 }
 
 header.scrolled {
-    /* com logo pranca background-color: #3333338a; */
-    /* com logo prera */ background-color: rgba(0, 0, 0, 0.148);
+    /* com logo pranca  */
+    /* background-color: #3333338a; */
+    /* com logo prera */
+     background-color: rgba(0, 0, 0, 0.548);
     border: none;
     padding: 1rem 3.45rem;
 
@@ -134,6 +136,11 @@ header h1 {
         background-color: #333;
     }
 
+    .overlay {
+        margin-top: 15vh;
+        line-height: 1;
+    }
+
     .nav-list {
         position: absolute;
         top: 8vh;
@@ -161,7 +168,7 @@ header h1 {
     transform: translateX(0);
   
     & .rodape {
-        font-size: 2.5vw;
+        /* font-size: 2.5vw; */
     }
 
     & .whatsapp {
@@ -385,104 +392,216 @@ section h2 {
     transform: translate(0.5rem, 0.5rem);
 }
 
-/* footer */
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    font-size: 1em;
-    margin: 10px 0 5px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-form button {
-    padding: 15px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.rodape__container {
+.icon-principal {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4.2rem;
-    margin-top: 2.55rem;
+    gap: 3.55rem;
 
-    & #logo-watts {
-        & img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2.30rem;
-        }
-    }
-}
-
-  
-.rodape__redes {
-    & .rodape__rede {
-        opacity: 0.6;
-        filter: grayscale(1);
-        
-        &:hover {
+    & .icon__redes {
+        margin-top: 1.55rem;
+    
+        & .icon__rede {
+          opacity: 0.6;
+          filter: grayscale(1);
+    
+          &:hover {
             opacity: 1;
             filter: none;
+          }
         }
     }
+
 }
 
-
-.rodape {
-    font-size: 2.55rem;
-    padding-top: 2.5rem;
-    
-    & .rodape__secao-formulario {
-        background-color: #f9f9f9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        & .rodape__texto {
-                font-weight: 700;
-            }
+/* footer */
+#logo-watts {
+    & img {
+        width: 27px;
     }
 }
-
-
 @media (max-width: 845px) {
-    .rodape {
-        font-size: 3vw;
-    }
-
     .whatsapp {
         width: 7.5rem;
         right: 1rem;
     }
+}
+.rodape {
+    font-size: 1.33rem;
+    padding-top: 2.5rem;
+
+    & .rodape__secao-formulario {
+        background-color: #f9f9f9;
+        padding: 3.12rem 2rem;
+
+        & .rodape__app-newsletter {
+            max-width: 136.6rem;
+            margin: 0 auto;
+
+                & .rodape__orcamento {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.55rem;
+                }
+        }
+    }
+}
+  .rodape__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    max-width: 136.6rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 59.375em) {
+     ul { 
+        text-align: center;
+     }
+
+    .rodape__container {
+      flex-direction: column;
+      gap: 3.12rem;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 80em) {
+    .rodape__app-newsletter {
+        flex-direction: column;
+        gap: 3.12rem;
+    }
+  }
+  @media (max-width: 59.375em) {
+    .rodape__app-newsletter {
+      flex-direction: column;
+      max-width: 66rem;
+    }
+  }
+  @media (max-width: 59.375em) {
+    .rodape__app {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 59.375em) {
+    .rodape__orcamento {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .rodape__container-app {
+    max-width: 50rem;
+  }
+  @media (max-width: 80em) {
+    .rodape__container-app {
+      max-width: 38rem;
+    }
+  }
+  .rodape__container-orcamento {
+    max-width: 50%;
+  }
+  @media (max-width: 80em) {
+    .rodape__container-orcamento {
+      max-width: 100%;
+    }
+  }
+  .rodape__texto-orcamento {
+    font-size: 3.32rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 59.375em) {
+    .rodape__informacoes {
+      max-width: 66rem;
+    }
+  }
+  @media (max-width: 30em) {
+    .rodape__informacoes {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+  .rodape__links {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.65rem;
+    list-style: none;
+    color: #585858;
+  }
+  .rodape__titulo {
+    font-size: 1.92rem;
+    font-weight: 700;
+    letter-spacing: 0.55px;
+  }
+  .rodape__atendimento {    
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 46.4rem;
+  }
+  @media (max-width: 80em) {
+    .rodape__atendimento {
+      max-width: 35rem;
+    }
+  }
+  @media (max-width: 59.375em) {
+    .rodape__atendimento {
+      max-width: 60rem;
+      text-align: center;
+    }
+  }
+  @media (max-width: 30em) {
+    .rodape__ancoras {
+      gap: 2rem;
+    }
+  }
+  .rodape__ancora-icone {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    text-decoration-thickness: 1px;
+    color: inherit;
+    width: 50%;
+  }
+  @media (max-width: 59.375em) {
+    .rodape__ancora-icone {
+      width: auto;
+      flex: 1;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 30em) {
+    .rodape__ancora-icone {
+      min-width: 100%;
+    }
+  }
+.rodape__redes {
+    display: flex; 
+    margin-top: 3.55rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7.55rem;
+
+    & .rodape__rede {
+      opacity: 0.6;
+      filter: grayscale(1);
+
+      &:hover {
+        opacity: 1;
+        filter: none;
+      }
+    }
+}
+
+.rodape__secao-empresa {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-size: 1.17rem;
+    opacity: 0.5;
+    padding: 1.28rem;
+    text-align: center;
 }
