@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="website icon" type="png" href="assets/engrenagem.png">
+
     <!-- <link rel="stylesheet" href="media-1160.css" media="       (max-width: 1160px)">
     <link rel="stylesheet" href="media-1035.css" media="(max-width: 1035px)">
     <link rel="stylesheet" href="media-830.css" media="(max-width: 830px)">
@@ -17,10 +19,16 @@
     <header>
         <div class="text"> 
             <div class="container">
-                <img src="assets/logo.png" class="logo-preta" alt="Logo tonolli versão preta">
                 <img src="assets/logo-branca.png" class="logo-branca" alt="Logo tonolli versão branca">
+
                 <nav>
-                    <ul>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    
+                    <ul class="nav-list">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="servicos.html">Serviços</a></li>
@@ -37,16 +45,49 @@
                 <p>Manutenção preventiva, reparo de instrumentos, mangueiras e motores cirúrgicos da marca Kavo em todo o Brasil.</p>
                 <button onclick="scrollToSection('cursos')">Faça um Orçamento</button>
                 <div class="overlay-location">
-                  <svg viewBox="0 0 512 512" version="1.1" style="width: 2.55vh;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" style="width: 2px; padding: none"></g><g id="SVGRepo_iconCarrier"> <title>location-filled</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="location-outline" fill="#fff" transform="translate(106.666667, 42.666667)"> <path d="M149.333333,7.10542736e-15 C231.807856,7.10542736e-15 298.666667,66.8588107 298.666667,149.333333 C298.666667,176.537017 291.413333,202.026667 278.683512,224.008666 C270.196964,238.663333 227.080238,313.32711 149.333333,448 C71.5864284,313.32711 28.4697022,238.663333 19.9831547,224.008666 C7.25333333,202.026667 2.84217094e-14,176.537017 2.84217094e-14,149.333333 C2.84217094e-14,66.8588107 66.8588107,7.10542736e-15 149.333333,7.10542736e-15 Z M149.333333,85.3333333 C113.987109,85.3333333 85.3333333,113.987109 85.3333333,149.333333 C85.3333333,184.679557 113.987109,213.333333 149.333333,213.333333 C184.679557,213.333333 213.333333,184.679557 213.333333,149.333333 C213.333333,113.987109 184.679557,85.3333333 149.333333,85.3333333 Z" id="Combined-Shape"> </path> </g> </g> </g></svg>
-                  <p>Rua João de Souza Melo, nº 364, Joinville, <br> Santa Catarina, Brasil</p>
+                  <svg viewBox="0 0 512 512" version="1.1" 
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" style="padding: none"></g><g id="SVGRepo_iconCarrier"> <title>location-filled</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="location-outline" fill="#fff" transform="translate(106.666667, 42.666667)"> <path d="M149.333333,7.10542736e-15 C231.807856,7.10542736e-15 298.666667,66.8588107 298.666667,149.333333 C298.666667,176.537017 291.413333,202.026667 278.683512,224.008666 C270.196964,238.663333 227.080238,313.32711 149.333333,448 C71.5864284,313.32711 28.4697022,238.663333 19.9831547,224.008666 C7.25333333,202.026667 2.84217094e-14,176.537017 2.84217094e-14,149.333333 C2.84217094e-14,66.8588107 66.8588107,7.10542736e-15 149.333333,7.10542736e-15 Z M149.333333,85.3333333 C113.987109,85.3333333 85.3333333,113.987109 85.3333333,149.333333 C85.3333333,184.679557 113.987109,213.333333 149.333333,213.333333 C184.679557,213.333333 213.333333,184.679557 213.333333,149.333333 C213.333333,113.987109 184.679557,85.3333333 149.333333,85.3333333 Z"> </path> </g> </g> </g></svg>
+                  <p>Rua João de Souza Melo, nº 364, Joinville, Santa Catarina, Brasil</p>
                 </div>
+
+                <div class="rodape__container">
+                        <div class="rodape__redes">
+                            <a href="https://www.instagram.com/kavotonolli?utm_source=qr&igsh=MWZ0Y2IxY3oweWhpdg%3D%3D  z" class="rodape__rede">
+                            <img
+                                src="https://lojausereserva.vtexassets.com/arquivos/insx1.png"
+                                alt="Logo Instagram"
+                            />
+                            </a>
+                        </div>
+
+                        <div class="rodape__redes">
+                            <a href="https://www.youtube.com/@MeATonolli" class="rodape__rede"
+                            >
+                                <img
+                                src="https://lojausereserva.vtexassets.com/arquivos/ytx1.png"
+                                alt="Logo YouTube"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="rodape__redes" id="logo-watts">
+                            <a href="https://wa.me//554799685008?text=Olá,%20encontrei%20seu%20contato %20pelo%20site.%20Gostaria%20de%20fazer%20um%20orçamento." class="rodape__rede"
+                            >
+                                <img
+                                src="assets/Whatsapp-logo.png"
+                                alt="Logo Whatsapp"
+                                />
+                            </a>
+                        </div>
+                </div>
+
             </div>
         </section>
         <section id="cursos">
             <div class="container">
                 <h2>Nossos Cursos</h2>
                 <div class="course">
-                    <img src="https://via.placeholder.com/300x200" alt="Curso de Programação">
+                    <img src="assets/300x200.png" alt="Curso de Programação">
                     <div class="course-info">
                         <h3>Curso de Programação</h3>
                         <p>Domine as linguagens de programação mais demandadas no mercado.</p>
@@ -54,7 +95,7 @@
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://via.placeholder.com/300x200" alt="Curso de Marketing Digital">
+                    <img src="assets/300x200.png" alt="Curso de Marketing Digital">
                     <div class="course-info">
                         <h3>Curso de Marketing Digital</h3>
                         <p>Desenvolva estratégias eficazes para promover negócios online.</p>
@@ -62,7 +103,7 @@
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://via.placeholder.com/300x200" alt="Curso de Design Gráfico">
+                    <img src="assets/300x200.png" alt="Curso de Design Gráfico">
                     <div class="course-info">
                         <h3>Curso de Design Gráfico</h3>
                         <p>Aprenda a criar designs visuais incríveis com ferramentas populares.</p>
@@ -104,65 +145,22 @@
         </section> -->
     </main>
 
-    <a href="https://web.whatsapp.com"
+    <a href="https://wa.me//554799685008?text=Olá,%20encontrei%20seu%20contato %20pelo%20site.%20Gostaria%20de%20fazer%20um%20orçamento."
     class="whatsapp">
     <img
-    src="https://www.hashtagtreinamentos.com/wp-content/uploads/2023/06/whatsapp-logo-2.png"
+    src="assets/whatsapp-logoHOME.png"
         alt="Logo do WhatsApp"/>
     </a>
 
     <footer class="rodape">
         <section class="rodape__secao-formulario">
           <div class="rodape__app-newsletter">
-            <div class="rodape__container-newsletter">
-              <div class="rodape__newsletter">
-                <p class="rodape__texto-newsletter">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-  
-        <section class="rodape__secao-informacoes">
-          <div class="rodape__container">
-            <div class="rodape__atendimento">
-              <div class="rodape__redes">
-                <a href="https://facebook.com/usereserva" class="rodape__rede">
-                  <img
-                    src="https://lojausereserva.vtexassets.com/arquivos/fbx1.png"
-                    alt="Logo Facebook"
-                  />
-                </a>
-                <a href="https://instagram.com/reserva" class="rodape__rede">
-                  <img
-                    src="https://lojausereserva.vtexassets.com/arquivos/insx1.png"
-                    alt="Logo Instagram"
-                  />
-                </a>
-                <a
-                  href="https://youtube.com/user/usereserva"
-                  class="rodape__rede"
-                >
-                  <img
-                    src="https://lojausereserva.vtexassets.com/arquivos/ytx1.png"
-                    alt="Logo YouTube"
-                  />
-                </a>
-                <a
-                  href="https://linkedin.com/company/reserva"
-                  class="rodape__rede"
-                >
-                  <img
-                    src="https://lojausereserva.vtexassets.com/arquivos/linx1.png"
-                    alt="Logo LinkedIn"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+                <p class="rodape__texto">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </section>
       </footer>
-      
+
     <script src="site.js"></script>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
